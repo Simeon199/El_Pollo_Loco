@@ -39,7 +39,11 @@ let privacyOrImprintTouchActivated = false;
  * @type {{condition: function(EventTarget): boolean, handler: function(Event, EventTarget): void|Promise<void>}[]}
  */
 
-let clickEventsHandleOnIndexPageCommon = [
+let clickEventsHandleOnIndexPageCommon = [ 
+    {
+        condition: (target) => isContainerTouchedOrClicked(target, '#main-page-link'),
+        handler: (event, target) => redirectToWebPage('../index.html')
+    },
     {
         condition: (target) => isSettingsButtonPressed(target),
         handler: async (event, target) => await loadComponent(explainGamePopUp, 'explain-game-container')  
