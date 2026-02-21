@@ -47,7 +47,7 @@ You are controlling the main character **Pepe Peligroso** who has to defeat a la
 
 | Key     | Action                                                                      |
 | ------- | --------------------------------------------------------------------------- |
-| `SPACE` | ⬆️ Jump – leap into the air to avoid attacking chickens or to stomp on them |
+| `SPACE` | ⬆️ Jump – leap into the air to avoid attacking chickens or to jump on them |
 | `→`     | ➡️ Move right                                                               |
 | `←`     | ⬅️ Move left                                                                |
 | `D`     | 🍾 Throw – hurl a bottle at the attacking chickens                          |
