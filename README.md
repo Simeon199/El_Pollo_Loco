@@ -29,13 +29,21 @@ El Pollo Loco is a web browser jump and run game designed and built as part of a
 
 ## 🚀 Installation
 
-Since this project is built with plain Vanilla JavaScript, no package manager or additional dependencies are required.
+The game logic is written in plain Vanilla JavaScript, but a build step is required to bundle and minify the source files before opening the game. Make sure you have [Node.js](https://nodejs.org) installed.
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/Simeon199/El_Pollo_Loco.git
    ```
-2. Open `index.html` directly in your browser – that's it!
+2. Install the build dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the bundler to generate the required files in `dist/`:
+   ```bash
+   npm run build
+   ```
+4. Open `index.html` directly in your browser – that's it!
 
 ---
 

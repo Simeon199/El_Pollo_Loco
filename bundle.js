@@ -96,6 +96,8 @@ function bundleAndMinifyCSS(fileList, outputPath){
     console.log(`CSS bundled and minified to ${outputPath}`);
 }
 
+fs.mkdirSync('dist', { recursive: true });
+
 bundleAndMinifyJS(gameJS, 'dist/game.bundle.min.js');
 bundleAndMinifyJS(componentJS, 'dist/components.bundle.min.js');
 bundleAndMinifyJS(commonJS, 'dist/common.bundle.min.js');
