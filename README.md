@@ -36,7 +36,9 @@ The game logic is written in plain Vanilla JavaScript, but a build step is requi
    git clone https://github.com/Simeon199/El_Pollo_Loco.git
    ```
 2. Move to the project directory:
-   `cd El_Pollo_Loco`
+   ```bash
+   cd El_Pollo_Loco
+   ```
 3. Install the build dependencies:
    ```bash
    npm install
