@@ -91,44 +91,7 @@
     height: auto;
 }
 
-@media(min-width: 1920px) and (orientation: landscape){
-    .sound-and-exit-container {
-        width: 20%;
-        right: 5%;
-    }
-
-    #sound-off-icon, 
-    #sound-on-icon {
-        width: 96px;
-    }
-
-    .exit-game-container img {
-        width: 120px;
-    }
-
-    .exit-game-container p {
-        font-size: 48px;
-    }
-
-    .touch-control img {
-        width: 120px;
-        padding: 8px;
-    }
-
-    .control-button-image-container {
-        font-size: larger;
-        display: flex;
-        padding: 8px;
-        border: 2px solid black;
-    }
-
-    #enter-exit-fullscreen img {
-        width: 56px;
-        height: auto;
-    }
-}
-
-@media(min-width: 1025px) and (max-width: 1920px) and (orientation: landscape){
+@media(min-width: 1025px) and (orientation: landscape){ 
 
     .touch-control img {
         width: clamp(64px, 80px, 96px);
