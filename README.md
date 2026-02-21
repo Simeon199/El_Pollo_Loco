@@ -1,4 +1,4 @@
-# 🧪 El Pollo Loco – The Web Browser Jump And Run Game
+# El Pollo Loco – The Web Browser Jump And Run Game
 
 A web browser jump and run game that was realized with object oriented JavaScript.
 
