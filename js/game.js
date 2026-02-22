@@ -21,14 +21,69 @@ let wasGameWon = null;
 let soundOn = true;
 let stopGameInterval;
 
+/** All audio file paths used by the AudioManager. */
+
+let GAME_AUDIO_PATHS = [
+    'audio/laCucaracha.mp3', 'audio/punch_and_ouch1.mp3', 'audio/bottle_hit.mp3',
+    'audio/hit3.mp3', 'audio/loadingSound.mp3', 'audio/soft_landing.mp3',
+    'audio/bellSound.mp3', 'audio/chicken_sound1.mp3', 'audio/chicken_scream1.mp3',
+    'audio/running.mp3', 'audio/snor.mp3'
+];
+
 /**
- * Starts the game: shows the loading spinner, loads all bundles, then initializes all necessary variables and objects.
- * This function is now async to allow awaiting bundle loading before game logic starts.
+ * Starts the game: shows the loading spinner, preloads audio, then initializes all necessary variables and objects.
  */
 
 async function startGame() {
     isGamePlaying = true;
+    showLoadingSpinner();
+    await preloadGameAudio();
     init();
+    hideLoadingSpinner();
+}
+
+/**
+ * Shows the loading spinner overlay.
+ */
+
+function showLoadingSpinner() {
+    document.getElementById('loading-spinner').style.display = 'flex';
+}
+
+/**
+ * Hides the loading spinner overlay.
+ */
+
+function hideLoadingSpinner() {
+    document.getElementById('loading-spinner').style.display = 'none';
+}
+
+/**
+ * Returns a Promise that resolves when the given audio file is ready to play,
+ * or immediately if a load error occurs.
+ * @param {string} path - The path to the audio file.
+ * @returns {Promise<void>}
+ */
+
+function createAudioLoadPromise(path) {
+    return new Promise(resolve => {
+        let audio = new Audio(path);
+        audio.addEventListener('canplaythrough', resolve, { once: true });
+        audio.addEventListener('error', resolve, { once: true });
+        audio.load();
+    });
+}
+
+/**
+ * Preloads all game audio files into the browser cache.
+ * Resolves when all files are ready or after a 4-second timeout, whichever comes first.
+ * @returns {Promise<void>}
+ */
+
+function preloadGameAudio() {
+    let timeout = new Promise(resolve => setTimeout(resolve, 4000));
+    let loadPromises = GAME_AUDIO_PATHS.map(path => createAudioLoadPromise(path));
+    return Promise.race([Promise.all(loadPromises), timeout]);
 }
 
 /**

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./assets/chicken.png">
-    <link rel="stylesheet" href="dist/styles.bundle.min.css"> 
+    <link rel="preload" as="image" href="img/9_intro_outro_screens/start/startscreen_1.webp">
+    <link rel="stylesheet" href="dist/styles.bundle.min.css">
     <script src="script.js"></script>
     <script src="dist/components.bundle.min.js"></script>
     <script src="dist/common.bundle.min.js"></script>    
@@ -104,7 +105,10 @@
     <!-- Displays the loading spinner if loading takes to long-->
 
     <div id="loading-spinner" style="display: none;">
-        <div class="spinner"></div>
+        <div class="loadingContent">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
     </div>
 
     <!-- Opens the settings pop up that explains the game -->
