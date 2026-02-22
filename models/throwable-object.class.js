@@ -16,23 +16,23 @@ class ThrowableObject extends MovableObject {
     world;
 
     BOTTLE_ROTATE_IMAGES = [
-        'img/6_salsa_bottle/bottle_rotation/1_bottle_rotation.png',
-        'img/6_salsa_bottle/bottle_rotation/2_bottle_rotation.png',
-        'img/6_salsa_bottle/bottle_rotation/3_bottle_rotation.png',
-        'img/6_salsa_bottle/bottle_rotation/4_bottle_rotation.png'
+        'img/6_salsa_bottle/bottle_rotation/1_bottle_rotation.webp',
+        'img/6_salsa_bottle/bottle_rotation/2_bottle_rotation.webp',
+        'img/6_salsa_bottle/bottle_rotation/3_bottle_rotation.webp',
+        'img/6_salsa_bottle/bottle_rotation/4_bottle_rotation.webp'
     ];
 
     BOTTLE_BROKEN_IMAGES = [
-        'img/6_salsa_bottle/bottle_rotation/bottle_splash/1_bottle_splash.png',
-        'img/6_salsa_bottle/bottle_rotation/bottle_splash/2_bottle_splash.png',
-        'img/6_salsa_bottle/bottle_rotation/bottle_splash/3_bottle_splash.png',
-        'img/6_salsa_bottle/bottle_rotation/bottle_splash/4_bottle_splash.png',
-        'img/6_salsa_bottle/bottle_rotation/bottle_splash/5_bottle_splash.png',
-        'img/6_salsa_bottle/bottle_rotation/bottle_splash/6_bottle_splash.png'
+        'img/6_salsa_bottle/bottle_rotation/bottle_splash/1_bottle_splash.webp',
+        'img/6_salsa_bottle/bottle_rotation/bottle_splash/2_bottle_splash.webp',
+        'img/6_salsa_bottle/bottle_rotation/bottle_splash/3_bottle_splash.webp',
+        'img/6_salsa_bottle/bottle_rotation/bottle_splash/4_bottle_splash.webp',
+        'img/6_salsa_bottle/bottle_rotation/bottle_splash/5_bottle_splash.webp',
+        'img/6_salsa_bottle/bottle_rotation/bottle_splash/6_bottle_splash.webp'
     ];
 
-    STANDING_BOTTLE_LEFT_DIRECTION = ['img/6_salsa_bottle/1_salsa_bottle_on_ground.png'];
-    STANDING_BOTTLE_RIGHT_DIRECTION = ['img/6_salsa_bottle/2_salsa_bottle_on_ground.png'];
+    STANDING_BOTTLE_LEFT_DIRECTION = ['img/6_salsa_bottle/1_salsa_bottle_on_ground.webp'];
+    STANDING_BOTTLE_RIGHT_DIRECTION = ['img/6_salsa_bottle/2_salsa_bottle_on_ground.webp'];
 
 
     /**
@@ -46,7 +46,7 @@ class ThrowableObject extends MovableObject {
 
     constructor(x, y, z) {
         super();
-        this.loadImage('img/7_statusbars/3_icons/icon_salsa_bottle.png');
+        this.loadImage('img/7_statusbars/3_icons/icon_salsa_bottle.webp');
         this.loadImages(this.STANDING_BOTTLE_LEFT_DIRECTION);
         this.loadImages(this.STANDING_BOTTLE_RIGHT_DIRECTION);
         this.loadImages(this.BOTTLE_ROTATE_IMAGES);

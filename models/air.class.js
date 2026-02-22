@@ -11,6 +11,6 @@ class Air extends MovableObject {
     width = 720;
     height = 0;
     constructor() {
-        super().loadImage('img/5_background/layers/air.png');
+        super().loadImage('img/5_background/layers/air.webp');
     }
 }

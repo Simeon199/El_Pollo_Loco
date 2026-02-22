@@ -16,6 +16,6 @@ class Background extends MovableObject {
      */
 
     constructor() {
-        super().loadImage('img/5_background/complete_background.png');
+        super().loadImage('img/5_background/complete_background.webp');
     }
 }

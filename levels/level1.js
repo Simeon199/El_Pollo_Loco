@@ -71,7 +71,7 @@ function generateEnemies() {
 
 function generateBackgroundArray() {
     let layers = [
-        'img/5_background/layers/air.png',
+        'img/5_background/layers/air.webp',
         'img/5_background/layers/3_third_layer/',
         'img/5_background/layers/2_second_layer/',
         'img/5_background/layers/1_first_layer/'
@@ -83,7 +83,7 @@ function generateBackgroundArray() {
         let position = i * screenWidth;
         backgrounds.push(new BackgroundObject(layers[0], position));
         for (let j = 1; j < layers.length; j++) {
-            let layerImage = layers[j] + ((Math.abs(i) % 2) + 1) + '.png';
+            let layerImage = layers[j] + ((Math.abs(i) % 2) + 1) + '.webp';
             backgrounds.push(new BackgroundObject(layerImage, position));
         }
     }

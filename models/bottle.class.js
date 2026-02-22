@@ -13,10 +13,10 @@ class Bottle extends ThrowableObject {
     x = -2 * 700 + Math.random() * 2876;
 
     BOTTLE_ROTATION_IMAGES = [
-        'img/6_salsa_bottle/bottle_rotation/1_bottle_rotation.png',
-        'img/6_salsa_bottle/bottle_rotation/2_bottle_rotation.png',
-        'img/6_salsa_bottle/bottle_rotation/3_bottle_rotation.png',
-        'img/6_salsa_bottle/bottle_rotation/4_bottle_rotation.png'
+        'img/6_salsa_bottle/bottle_rotation/1_bottle_rotation.webp',
+        'img/6_salsa_bottle/bottle_rotation/2_bottle_rotation.webp',
+        'img/6_salsa_bottle/bottle_rotation/3_bottle_rotation.webp',
+        'img/6_salsa_bottle/bottle_rotation/4_bottle_rotation.webp'
     ];
 
     /**
@@ -25,7 +25,7 @@ class Bottle extends ThrowableObject {
 
     constructor() {
         super();
-        this.loadImage('img/7_statusbars/3_icons/icon_salsa_bottle.png');
+        this.loadImage('img/7_statusbars/3_icons/icon_salsa_bottle.webp');
         this.loadImages(this.BOTTLE_ROTATION_IMAGES);
     }
 }

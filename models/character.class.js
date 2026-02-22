@@ -29,7 +29,7 @@ class Character extends MovableObject {
      */
 
     constructor() {
-        super().loadImage('img/2_character_pepe/3_jump/J-31.png');
+        super().loadImage('img/2_character_pepe/3_jump/J-31.webp');
         let images = new window.CharacterImages();
         this.IMAGES_WALKING = images.IMAGES_WALKING;
         this.IMAGES_CHILL = images.IMAGES_CHILL;

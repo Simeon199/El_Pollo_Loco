@@ -33,7 +33,7 @@ class Endboss extends Chicken {
         this.IMAGES_DEAD_ENDBOSS = endbossImages.IMAGES_DEAD_ENDBOSS;
         this.IMAGES_ALERT_ENDBOSS = endbossImages.IMAGES_ALERT_ENDBOSS;
         this.IMAGES_ATTACK_ENDBOSS = endbossImages.IMAGES_ATTACK_ENDBOSS;
-        this.loadImage('img/3_enemies_chicken/chicken_normal/2_dead/dead.png')
+        this.loadImage('img/3_enemies_chicken/chicken_normal/2_dead/dead.webp')
         this.loadImages(this.IMAGES_WALKING_ENDBOSS);
         this.loadImages(this.IMAGES_HURT_ENDBOSS);
         this.loadImages(this.IMAGES_DEAD_ENDBOSS);

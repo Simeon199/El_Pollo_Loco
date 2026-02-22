@@ -6,13 +6,13 @@
 
 class BabyChicken extends Chicken {
     IMAGES_WALKING = [
-        'img/3_enemies_chicken/chicken_small/1_walk/1_w.png',
-        'img/3_enemies_chicken/chicken_small/1_walk/2_w.png',
-        'img/3_enemies_chicken/chicken_small/1_walk/2_w.png'
+        'img/3_enemies_chicken/chicken_small/1_walk/1_w.webp',
+        'img/3_enemies_chicken/chicken_small/1_walk/2_w.webp',
+        'img/3_enemies_chicken/chicken_small/1_walk/2_w.webp'
     ];
 
     IMAGE_DEAD_CHICKEN = [
-        'img/3_enemies_chicken/chicken_small/2_dead/dead.png'
+        'img/3_enemies_chicken/chicken_small/2_dead/dead.webp'
     ];
 
     world;
