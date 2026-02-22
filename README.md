@@ -23,7 +23,7 @@ El Pollo Loco is a web browser jump and run game designed and built as part of a
 
 - HTML
 - CSS
-- JavaScript (Vanilla JS – no frameworks or external dependencies)
+- Vanilla JavaScript
 
 ---
 
